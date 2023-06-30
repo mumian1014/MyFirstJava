@@ -1,0 +1,29 @@
+/* @theme footer_temp */
+@import 'default';
+
+section {
+  position: relative;
+}
+
+/* ページ番号 */
+section::after {
+  content: attr(data-marpit-pagination) ' / ' attr(data-marpit-pagination-total);
+  font-size: 80%;
+}
+
+/* 発表会名 */
+header {
+  width: 100%;
+  position: absolute;
+  top: unset;
+  bottom: 21px;
+  left: 0;
+  text-align: center;
+  font-size: 80%;
+}
+
+/* 日付 */
+footer {
+  text-align: center;
+  font-size: 80%;
+}
