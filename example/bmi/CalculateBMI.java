@@ -77,6 +77,7 @@ public static void main(String[] args) {
     // 桁数が出すぎる
     // System.out.println("BMI値は" + bmi + "です。");
     System.out.format("BMI値は%.2fです。", bmi);
+    System.out.print(System.lineSeparator());
     System.out.println("診断結果：" + message);
     System.out.println("------------------------------");
 
