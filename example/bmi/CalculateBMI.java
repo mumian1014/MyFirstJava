@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.math.*;
 
 public class CalculateBMI {
 public static void main(String[] args) {
@@ -73,7 +74,9 @@ public static void main(String[] args) {
    */
   private void print(double bmi, String message) {
     System.out.println("------------------------------");
-    System.out.println("BMI値は" + bmi + "です。");
+    // 桁数が出すぎる
+    // System.out.println("BMI値は" + bmi + "です。");
+    System.out.format("BMI値は%.2fです。", bmi);
     System.out.println("診断結果：" + message);
     System.out.println("------------------------------");
 
